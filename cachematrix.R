@@ -1,9 +1,9 @@
 ## These functions create a cache matrix and then returns its inverse
 ## Example usage:
 ## > mat <- matrix(rnorm(25), nrow = 5)                 # Create a square matrix 
-## > cmat <- makeCacheMatrix(mat)                        # Create our cache matrix
-## > cacheSolve(cmat)                                    # First call, calculates and retorn de inverse matrix
-## > cacheSolve(cmat)                                    # Second and following calls returns the inverse matrix
+## > cmat <- makeCacheMatrix(mat)                       # Create our cache matrix
+## > cacheSolve(cmat)                                   # First call, calculates and returns de inverse matrix
+## > cacheSolve(cmat)                                   # Second and following calls return the inverse matrix
                                                         # from the chache without need to calculate it
 
 
@@ -14,7 +14,7 @@
 ## 4. Get the value of the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-        ## inverse stores the cached inverse matrix
+        ## invMatrix stores the cached inverse matrix
         invMatrix <- NULL
         
         ## Setter for the square matrix
